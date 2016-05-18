@@ -32,7 +32,7 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
     @IBAction func playRemoteVideo(sender: UIButton) {
         
         // create video url form remote location (i.e. video stored at domain etc.)
-        self.videoUrl = NSURL(string: "http://download.prashantmangukiya.com/SwiftVideoPlayer-Data/Big_Buck_Bunny_Trailer.m4v")
+        self.videoUrl = NSURL(string: "http://cdnbakmi.kaltura.com/p/2085071/sp/208507100/raw/entry_id/1_v6l0ft1l/version/0")
 
         // perform segue
         self.performSegueWithIdentifier("seguePlayVideo", sender: self)
