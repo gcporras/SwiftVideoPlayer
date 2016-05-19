@@ -38,6 +38,10 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
         self.performSegueWithIdentifier("seguePlayVideo", sender: self)
     }
     
+    //action - Use Kaltura Video Player
+    @IBAction func playRemoteKalturaVideo(sender: UIButton) {
+    }
+
     
     
     
