@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74142100FF3A08DDC12EAEAD /* libPods-SwiftVideoPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5242B40A446B5732ACCB56B2 /* libPods-SwiftVideoPlayer.a */; };
 		8F4181BE1BEF21170031F8AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4181BD1BEF21170031F8AD /* AppDelegate.swift */; };
 		8F4181C01BEF21170031F8AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4181BF1BEF21170031F8AD /* ViewController.swift */; };
 		8F4181C31BEF21170031F8AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4181C11BEF21170031F8AD /* Main.storyboard */; };
 		8F4181C51BEF21170031F8AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F4181C41BEF21170031F8AD /* Assets.xcassets */; };
 		8F4181C81BEF21170031F8AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4181C61BEF21170031F8AD /* LaunchScreen.storyboard */; };
 		8FCC98631BF1E01B00AA7217 /* sample.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8FCC98621BF1E01B00AA7217 /* sample.mov */; };
+		C28AAAA51CECE3E2007E1CF7 /* KalturaplayerSDK-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = C28AAAA41CECE3E2007E1CF7 /* KalturaplayerSDK-Bridging-Header.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5242B40A446B5732ACCB56B2 /* libPods-SwiftVideoPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftVideoPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D763C5979DEEB6C9EF2D6C /* Pods-SwiftVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVideoPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVideoPlayer/Pods-SwiftVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		8F4181BA1BEF21170031F8AD /* SwiftVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4181BD1BEF21170031F8AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F4181BF1BEF21170031F8AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +29,9 @@
 		8F4181C91BEF21170031F8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F4181CF1BEF21FB0031F8AD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		8FCC98621BF1E01B00AA7217 /* sample.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sample.mov; sourceTree = "<group>"; };
+		C28AAAA31CECE3E2007E1CF7 /* SwiftVideoPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftVideoPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		C28AAAA41CECE3E2007E1CF7 /* KalturaplayerSDK-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KalturaplayerSDK-Bridging-Header.m"; sourceTree = "<group>"; };
+		F54DB2B4C7639C5CBEA08B44 /* Pods-SwiftVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVideoPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVideoPlayer/Pods-SwiftVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74142100FF3A08DDC12EAEAD /* libPods-SwiftVideoPlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 				8F4181CF1BEF21FB0031F8AD /* MediaPlayer.framework */,
 				8F4181BC1BEF21170031F8AD /* SwiftVideoPlayer */,
 				8F4181BB1BEF21170031F8AD /* Products */,
+				94307B3EB01238DD8C16D37D /* Pods */,
+				D8A45EB50A6029D1B13B0C58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,8 +75,27 @@
 				8F4181C41BEF21170031F8AD /* Assets.xcassets */,
 				8F4181C61BEF21170031F8AD /* LaunchScreen.storyboard */,
 				8F4181C91BEF21170031F8AD /* Info.plist */,
+				C28AAAA41CECE3E2007E1CF7 /* KalturaplayerSDK-Bridging-Header.m */,
+				C28AAAA31CECE3E2007E1CF7 /* SwiftVideoPlayer-Bridging-Header.h */,
 			);
 			path = SwiftVideoPlayer;
+			sourceTree = "<group>";
+		};
+		94307B3EB01238DD8C16D37D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70D763C5979DEEB6C9EF2D6C /* Pods-SwiftVideoPlayer.debug.xcconfig */,
+				F54DB2B4C7639C5CBEA08B44 /* Pods-SwiftVideoPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8A45EB50A6029D1B13B0C58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5242B40A446B5732ACCB56B2 /* libPods-SwiftVideoPlayer.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F4181CC1BEF21170031F8AD /* Build configuration list for PBXNativeTarget "SwiftVideoPlayer" */;
 			buildPhases = (
+				5A8937574789A84FB880F137 /* Check Pods Manifest.lock */,
 				8F4181B61BEF21170031F8AD /* Sources */,
 				8F4181B71BEF21170031F8AD /* Frameworks */,
 				8F4181B81BEF21170031F8AD /* Resources */,
+				A955F0BBEEBC93561E4F0D9A /* Embed Pods Frameworks */,
+				80717DF48140FB96493FB3F0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -95,7 +127,7 @@
 		8F4181B21BEF21170031F8AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "PrashantKumar Mangukiya";
 				TargetAttributes = {
@@ -136,6 +168,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A8937574789A84FB880F137 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80717DF48140FB96493FB3F0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftVideoPlayer/Pods-SwiftVideoPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A955F0BBEEBC93561E4F0D9A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftVideoPlayer/Pods-SwiftVideoPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F4181B61BEF21170031F8AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -143,6 +223,7 @@
 			files = (
 				8F4181C01BEF21170031F8AD /* ViewController.swift in Sources */,
 				8F4181BE1BEF21170031F8AD /* AppDelegate.swift in Sources */,
+				C28AAAA51CECE3E2007E1CF7 /* KalturaplayerSDK-Bridging-Header.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,23 +334,30 @@
 		};
 		8F4181CD1BEF21170031F8AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D763C5979DEEB6C9EF2D6C /* Pods-SwiftVideoPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftVideoPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prashantmangukiya.ios.SwiftVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftVideoPlayer/SwiftVideoPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8F4181CE1BEF21170031F8AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54DB2B4C7639C5CBEA08B44 /* Pods-SwiftVideoPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftVideoPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.prashantmangukiya.ios.SwiftVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftVideoPlayer/SwiftVideoPlayer-Bridging-Header.h";
 			};
 			name = Release;
 		};
