@@ -82,7 +82,7 @@
                 </avPlayerViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TxA-Ar-rXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="653"/>
+            <point key="canvasLocation" x="1683" y="395"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LPT-Xe-963">
