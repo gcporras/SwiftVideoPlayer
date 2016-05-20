@@ -16,6 +16,7 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
     
     // url for playing video
     var videoUrl: NSURL!
+    var kaltura = false
     
     
     // action - play local video
@@ -35,14 +36,20 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
         self.videoUrl = NSURL(string: "http://cdnbakmi.kaltura.com/p/2085071/sp/208507100/raw/entry_id/1_v6l0ft1l/version/0")
 
         // perform segue
+        self.kaltura = false
         self.performSegueWithIdentifier("seguePlayVideo", sender: self)
     }
     
     //action - Use Kaltura Video Player
     @IBAction func playRemoteKalturaVideo(sender: UIButton) {
+        // create video url form remote location (i.e. video stored at domain etc.)
+        self.videoUrl = NSURL(string: "http://cdnbakmi.kaltura.com/p/2085071/sp/208507100/raw/entry_id/1_v6l0ft1l/version/0")
+
+        // perform segue
+        self.kaltura = true
+        self.performSegueWithIdentifier("seguePlayVideo", sender: self)
     }
 
-    
     
     
     // MARK: - View functions
@@ -66,15 +73,21 @@ class ViewController: UIViewController, AVPlayerViewControllerDelegate {
 
         if segue.identifier == "seguePlayVideo" {
             
-            // get destination view controller
-            let destVc = segue.destinationViewController as! AVPlayerViewController
-            
-            // set player
-            destVc.player = AVPlayer(URL: self.videoUrl)
+            if self.kaltura {
+                // set Player
+                let kalturaPlayer = KPViewController(URL: self.videoUrl)
+                kalturaPlayer.view.frame = UIScreen.mainScreen().bounds
+                self.view.addSubview(kalturaPlayer.view)
+                self.view.sendSubviewToBack(kalturaPlayer.view)
+            }
+            else {
+                // get destination view controller
+                let destVc = segue.destinationViewController as! AVPlayerViewController
+
+                // set player
+                destVc.player = AVPlayer(URL: self.videoUrl)
+            }
         }
-        
     }
-    
-    
 }
 
